@@ -14,7 +14,6 @@
     .dark_color{
         color: #828181;
         font-weight: 500;
-
     }
     .text_color{
         color: #E95A08;
@@ -100,4 +99,50 @@ main{
     border: none;
     padding: 15px 0;
     width: 100%;
+}
+
+/* Plants lover Section */
+.plants_lover_container{
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+}
+.plt_title{
+    font-size: 45px;
+    font-family: noto serif;
+}
+.plt_image{
+    width: 50%;
+}
+.plt_image img{
+    width: 100%;
+}
+.plt_content{
+    width: 50%;
+    margin-left: 60px;
+}
+.plt_content ul{
+    padding-left: 40px;
+}
+.plt_content ul li{
+    margin: 15px;
+}
+
+/* Latest Deals Style */
+.deals_container{
+    margin-top: 50px;
+}
+.deal_content{
+    text-align: center;
+    padding: 10px 150px;
+}
+.deal_title{
+    font-size: 40px;
+    font-family: noto serif;
+    text-align: center;
+    padding: 15px;
+}
+/* Deal image gird style */
+.deal_image{
+    display: flex;
 }
