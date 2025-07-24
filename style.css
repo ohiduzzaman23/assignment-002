@@ -4,6 +4,8 @@
   font-optical-sizing: auto;
   font-variation-settings:
     "wdth" 100;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 *{
     margin: 0;
@@ -49,9 +51,10 @@ nav{
     display: flex;
     align-items: flex-end;
     margin-top: 50px;
+    justify-content: space-between;
 }
 .banner_title{
-    font-size: 50px;
+    font-size: 3.2rem;
     font-family: noto serif;
 }
 .banner_content{
@@ -71,7 +74,8 @@ main{
     margin-bottom: 30PX;
 }
 .plants_title h1{
-    font-size: 45px;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
 }
 .card_container{
     display: grid;
@@ -85,7 +89,7 @@ main{
     margin: 10px 0;
 }
 .card_description p, h6{
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #424141;
     font-weight: 600;
 }
@@ -100,15 +104,24 @@ main{
     padding: 15px 0;
     width: 100%;
 }
-
+/* Responsive Our Plants Section */
+    @media screen and (max-width:576px) {
+    .card_container{
+        grid-template-columns: repeat(2, auto);
+    }        
+    main{
+        margin: 20px;
+    }
+    }
 /* Plants lover Section */
 .plants_lover_container{
     margin-top: 180px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .plt_title{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-family: noto serif;
 }
 .plt_image{
@@ -127,7 +140,39 @@ main{
 .plt_content ul li{
     margin: 15px;
 }
+.badge{
+    position: absolute;
+    top: -95px;
+    right: 410px;
+}
+.badge img{
+    width: 200px;
+}
+/* Responsive Plants lover Section */
+@media screen and (max-width:576px) {
+    .badge{
+        display: none;
+    }
+    .plants_lover_container{
+        margin-top: 40px;
+        flex-direction: column; 
+    }
+    .plt_title{
+        font-size: 2rem;
+    }
+    .plt_image{
+        width: 100%;
+    }
+    .plt_content{
+        width: 100%;
+        margin-left: 10px;
+    }    
+    .plt_content ul li{
+        margin: 10px 0;
+    }
+  
 
+}
 /* Latest Deals Style */
 .deals_container{
     margin-top: 50px;
@@ -137,7 +182,7 @@ main{
     padding: 10px 150px;
 }
 .deal_title{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: noto serif;
     text-align: center;
     padding: 15px;
@@ -222,6 +267,10 @@ main{
     font-family: noto serif;
      margin-bottom: 20px;
 }
+.join_input{
+    display: flex;
+    justify-content: center;
+}
 .join_email{
     width: 50%;
     padding: 10px 15px;
@@ -231,7 +280,6 @@ main{
     color: white;
     border: none;
     padding: 10px 40px;
-
 }
 /* Footer Section Style */
 .logo_image img{
@@ -262,4 +310,7 @@ main{
 .social_icons img{
     width: 30px;
     margin-left: 10px;
+}
+.hide{
+    display: none;
 }
