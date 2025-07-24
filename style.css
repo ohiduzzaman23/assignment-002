@@ -147,18 +147,59 @@ main{
     display: flex;
     gap: 20px;
     margin-top: 50px;
-    position: relative;
 }
 .deal_row{
     display: grid;
     grid-template-rows: repeat(1, auto);
     gap: 20px;
 }
+.offer_bloom, .offer_ana, .offer_zabo{
+    position:relative;
+}
+.offer_bloom img, .offer_ana img, .offer_zabo img{
+    height: 100%;
+}
+.bg_opacity{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    border-radius: 15px;
+}
+.bloom_content, .ana_content, .zabo_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    z-index: 2;
+}
+.bloom_content a, .ana_content a, .zabo_content a{
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
 .deal_row img, .deal_col img{
     border-radius: 15px;
     width: 100%;
 }
-
+.zabo_content h4{
+    font-size: 2rem;
+    font-family: noto serif;
+}
+.zabo_content a{
+    font-size: 1.5rem;
+}
+.deal_col{
+    width: 100%;
+}
 /* Join Section Style */
 .join_container{
     margin-top: 30px;
