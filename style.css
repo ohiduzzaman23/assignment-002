@@ -106,11 +106,12 @@ main{
 }
 .plants_title{
     text-align: center;
-    margin-bottom: 30PX;
+    margin: 0 100px 30px;
 }
 .plants_title h1{
     font-size: 2.8rem;
     margin-bottom: 15px;
+    font-family: noto serif;
 }
 .card_container{
     display: grid;
@@ -146,6 +147,12 @@ main{
     }        
     main{
         margin: 20px;
+    }
+    .plants_title{
+    margin: 10px;
+    }   
+    .plants_title h1{
+    font-size: 2.5rem;
     }
     }
 /* Flower & Plants lover Section */
