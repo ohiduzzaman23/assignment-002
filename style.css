@@ -304,10 +304,13 @@ main{
     .deal_title{
         font-size: 2rem;
     }
+    .deal_col{
+        margin-top: 10px;
+    }
 }
 /* Join Section Style */
 .join_container{
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
 }
 .join_container img{
