@@ -156,4 +156,39 @@ main{
 }
 .deal_row img, .deal_col img{
     border-radius: 15px;
+    width: 100%;
+}
+
+/* Join Section Style */
+.join_container{
+    margin-top: 30px;
+    position: relative;
+}
+.join_container img{
+    width: 100%;
+}
+.join_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.join_title{
+    font-size: 45px;
+    color: white;
+    font-family: noto serif;
+     margin-bottom: 20px;
+}
+.join_email{
+    width: 50%;
+    padding: 10px 15px;
+}
+.sub_btn{
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+
 }
