@@ -58,9 +58,7 @@ nav{
 }
 @media screen and (max-width:576px) {
     .menu{
-        display: none;
-    }
-    
+        display: none;}
 }
 /* Banner Section Style */
 .banner{
@@ -80,6 +78,7 @@ nav{
     width: 100%;
     margin-left: 10px;
 }
+/* Responsive Header & Banner Section */
 @media screen and (max-width:576px) {
      header{
         margin: 20px;
@@ -149,7 +148,7 @@ main{
         margin: 20px;
     }
     }
-/* Plants lover Section */
+/* Flower & Plants lover Section */
 .plants_lover_container{
     margin-top: 180px;
     display: flex;
@@ -162,6 +161,12 @@ main{
 }
 .plt_image{
     width: 50%;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: -95px;
+    right: -75px;
 }
 .plt_image img{
     width: 100%;
@@ -170,27 +175,23 @@ main{
     width: 50%;
     margin-left: 60px;
 }
+.badge img{
+    width: 200px;
+}
 .plt_content ul{
     padding-left: 40px;
 }
 .plt_content ul li{
     margin: 15px;
 }
-.badge{
-    position: absolute;
-    top: -95px;
-    right: 410px;
-}
-.badge img{
-    width: 200px;
-}
-/* Responsive Plants lover Section */
+
+/* Responsive Flower & Plants lover Section */
 @media screen and (max-width:576px) {
     .badge{
         display: none;
     }
     .plants_lover_container{
-        margin-top: 40px;
+        margin-top: 50px;
         flex-direction: column; 
     }
     .plt_title{
@@ -201,7 +202,7 @@ main{
     }
     .plt_content{
         width: 100%;
-        margin-left: 10px;
+        margin: 20px 0 0 10px;
     }    
     .plt_content ul li{
         margin: 10px 0;
@@ -279,6 +280,7 @@ main{
 .deal_col{
     width: 100%;
 }
+/* Responsive Latest Deals Section */
 @media screen and (max-width:576px) {
    .deal_image{
         flex-direction: column;
@@ -331,10 +333,11 @@ main{
     border: none;
     padding: 10px 40px;
 }
+/* Responsive Join Section */
 @media screen and (max-width:576px) {
     .join_title{
     font-size: 1.8rem;
-    }    
+    }  
 }
 /* Footer Section Style */
 .logo_image img{
@@ -366,6 +369,7 @@ main{
     width: 30px;
     margin-left: 10px;
 }
+/* Responsive Footer Section */
 @media screen and (max-width:576px) {
     footer{
         margin-top: 50px;
