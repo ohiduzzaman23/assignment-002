@@ -64,10 +64,30 @@ nav{
     width: 100%;
     margin-left: 10px;
 }
+@media screen and (max-width:576px) {
+     header{
+        margin: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner_content{
+        width: 100%;
+    }
+    .banner_title{
+    font-size: 1.8rem;
+    }
+    .banner_content{
+    margin-top: 20px;
+    }
+}
 /* Main Section Style */
 /* Our Plants Section Style */
 main{
     margin: 100px;
+}
+.our_plants{
+    margin-top: 50px;
 }
 .plants_title{
     text-align: center;
@@ -170,10 +190,8 @@ main{
     .plt_content ul li{
         margin: 10px 0;
     }
-  
-
 }
-/* Latest Deals Style */
+/********* Latest Deals Style ********/
 .deals_container{
     margin-top: 50px;
 }
@@ -212,7 +230,7 @@ main{
     z-index: 1;
     top: 0;
     left: 0;
-    opacity: 0.3;
+    opacity: 50%;
     border-radius: 15px;
 }
 .bloom_content, .ana_content, .zabo_content{
@@ -244,6 +262,22 @@ main{
 }
 .deal_col{
     width: 100%;
+}
+@media screen and (max-width:576px) {
+   .deal_image{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .deals_container{
+        margin-top: 50px;
+    }
+    .deal_content{
+        padding: 10px;
+    }
+    .deal_title{
+        font-size: 2rem;
+    }
 }
 /* Join Section Style */
 .join_container{
@@ -281,6 +315,11 @@ main{
     border: none;
     padding: 10px 40px;
 }
+@media screen and (max-width:576px) {
+    .join_title{
+    font-size: 1.8rem;
+    }    
+}
 /* Footer Section Style */
 .logo_image img{
     width: 120px;
@@ -310,6 +349,18 @@ main{
 .social_icons img{
     width: 30px;
     margin-left: 10px;
+}
+@media screen and (max-width:576px) {
+    footer{
+        margin-top: 50px;
+    }
+    .footer_container{
+        flex-direction: column;
+        margin: 20px;
+    }    
+    .footer_menu ul{
+        margin-top: 20px;
+    }
 }
 .hide{
     display: none;
