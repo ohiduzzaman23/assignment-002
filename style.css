@@ -176,7 +176,7 @@ main{
     width: 100%;
 }
 .join_title{
-    font-size: 45px;
+    font-size: 3rem;
     color: white;
     font-family: noto serif;
      margin-bottom: 20px;
@@ -191,4 +191,34 @@ main{
     border: none;
     padding: 10px 40px;
 
+}
+/* Footer Section Style */
+.logo_image img{
+    width: 120px;
+}
+.footer_container{
+    display: flex;
+    margin: 50px 100px;
+}
+.footer_content{
+    flex: 2;
+    margin-right: 30px;
+}
+.footer_menu{
+    flex: 1;
+}
+.footer_menu ul li, .service ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer_menu ul li a, .service ul li a{
+    text-decoration: none;
+    color: #424141;
+}
+.service{
+    flex: 1;
+}
+.social_icons img{
+    width: 30px;
+    margin-left: 10px;
 }
